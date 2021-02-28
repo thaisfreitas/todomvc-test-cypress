@@ -12,8 +12,7 @@ export class TodoPage {
     }
 
     toggleTodo(todoIndex) {
-        cy.get('input.toggle').click();
-        cy.get(`ul.todo-list li:nth-child(${todoIndex}) input.toggle`);
+        cy.get(`.todo-list li:nth-child(${todoIndex + 1}) .toggle`).click()
     }
 
     validateTodoIsCompleted(todoIndex){
@@ -30,5 +29,15 @@ export class TodoPage {
         cy.contains('Clear').click();
     }
 
+    filterActiveTodos(){
+        cy.contains('Active').click();
+    }
 
+    filterCompletedTodos(){
+        cy.contains('Completed').click();
+    }
+
+    showAllTodos(){
+        cy.contains('All').click();
+    }
 }
