@@ -9,4 +9,4 @@ This repo contains some tests used to review and learn more about Cypress framew
 2. Run a specific test file : ```npx cypress --spec <folder/test.spec>``` 
 
 *Using cypress CLI but opening the browser*
-1. Run all tests: ```npx cypress open``` 
+1. Run tests: ```npx cypress open``` 
