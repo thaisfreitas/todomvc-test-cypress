@@ -15,4 +15,6 @@ This repo contains some tests used to review and learn more about Cypress framew
 - Run tests: ```npm run cypress``` 
 
 *Using npm: headless mode*
-- Run tests: ```npm test``` 
+- Run tests: ```npm test```
+
+* 
